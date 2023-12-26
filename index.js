@@ -52,7 +52,8 @@ function newUrl(urlStr) {
         return null
     }
 }
-
+var url = new URL(urlStr)
+document.getElementById("linkContainer").innerHTML = url
 
 addEventListener('fetch', e => {
     const ret = fetchHandler(e)
